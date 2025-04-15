@@ -24,7 +24,6 @@ export default function Button({
   iconSize = 20,
   ...props
 }: ButtonProps) {
-  const IconComponent = icon || leadingIcon || trailingIcon
   const isIconOnly = icon && !children
   
   const baseStyles = "rounded-[6px] text-base font-normal flex items-center justify-center transition-colors duration-200"
