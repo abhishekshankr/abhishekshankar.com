@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import FontStyles from "@/components/FontStyles";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "My Next.js Website",
-  description: "A website built with Next.js and custom fonts",
+  title: "abhishekshankar.com",
+  description: "Personal website of Abhishek Shankar",
 };
 
 export default function RootLayout({
@@ -17,13 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
+      <body className="font-sans">
         <FontStyles />
-      </head>
-      <body className={inter.className}>
-        <main className="min-h-screen bg-white">
-          {children}
-        </main>
+        {children}
       </body>
     </html>
   );
