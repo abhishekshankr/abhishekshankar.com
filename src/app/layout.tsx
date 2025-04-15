@@ -3,6 +3,7 @@ import "./globals.css";
 import FontStyles from "@/components/FontStyles";
 import Navbar from "@/components/Navbar";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "abhishekshankar.com",
@@ -21,6 +22,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
