@@ -3,7 +3,6 @@
 import { motion } from "motion/react"
 import { useRouter } from 'next/navigation'
 import Button from './Button'
-import { ArrowRight, CaretDown, Plus, House } from '@phosphor-icons/react'
 
 export default function AnimatedContent() {
   const router = useRouter()
@@ -50,25 +49,6 @@ export default function AnimatedContent() {
           About Me
         </Button>
       </motion.div>
-
-      {/* Button Variants Showcase */}
-      <div className="w-full max-w-4xl mt-16 space-y-8">
-        <div className="flex items-center justify-center space-x-4">
-          <Button variant="filled">Regular Button</Button>
-          <Button variant="outlined">Outlined Button</Button>
-          <Button variant="borderless">Borderless Button</Button>
-          <Button variant="filled" leadingIcon={ArrowRight}>With Leading Icon</Button>
-          <Button variant="outlined" trailingIcon={CaretDown}>With Trailing Icon</Button>
-        </div>
-        
-        <div className="flex items-center justify-center space-x-4">
-          <Button variant="filled" icon={House} />
-          <Button variant="outlined" icon={Plus} />
-          <Button variant="borderless" icon={ArrowRight} />
-          <Button variant="filled" leadingIcon={House} trailingIcon={ArrowRight}>Both Icons</Button>
-          <Button variant="borderless" leadingIcon={ArrowRight}>Borderless with Icon</Button>
-        </div>
-      </div>
     </div>
   )
 } 

@@ -6,16 +6,15 @@ export default function CaseStudies() {
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-medium mb-12 text-black">Case Studies</h1>
         <div className="grid gap-8">
+          {/* Add your case study links here in the following format:
           <Link 
-            href="/case-studies/example-project"
+            href="/case-studies/[project-slug]"
             className="block p-8 border border-black/10 rounded-lg hover:border-black/20 transition-colors"
           >
-            <h2 className="text-2xl font-medium mb-4 text-black">Design System</h2>
-            <p className="text-black/70">
-              A comprehensive design system built for scale and consistency across multiple platforms.
-            </p>
+            <h2 className="text-2xl font-medium mb-4 text-black">[Project Title]</h2>
+            <p className="text-black/70">[Project Description]</p>
           </Link>
-          {/* Add more case study links here */}
+          */}
         </div>
       </div>
     </div>
