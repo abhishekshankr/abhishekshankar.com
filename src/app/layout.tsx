@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import FontStyles from "@/components/FontStyles";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,15 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <style jsx global>{`
-          @font-face {
-            font-family: 'CustomFont';
-            src: url('/fonts/your-font.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-          }
-        `}</style>
+        <FontStyles />
       </head>
       <body className={inter.className}>
         <main className="min-h-screen bg-white">
