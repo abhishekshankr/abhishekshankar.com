@@ -1,11 +1,11 @@
 "use client"
 
 import Link from 'next/link'
-import { motion, useSpring, useAnimate } from 'motion/react'
+import { motion, useAnimate } from 'motion/react'
 import { useEffect, useState } from 'react'
 
 function AnimatedNumber({ target, delay = 0 }: { target: number; delay?: number }) {
-  const [scope, animate] = useAnimate()
+  const [scope] = useAnimate()
   const [displayNumber, setDisplayNumber] = useState(0)
   
   useEffect(() => {
@@ -30,7 +30,6 @@ function AnimatedNumber({ target, delay = 0 }: { target: number; delay?: number 
         }
         requestAnimationFrame(animate)
       } else {
-        // Smooth transition to final number
         setDisplayNumber(target)
       }
     }
@@ -74,10 +73,10 @@ export default function NotFound() {
             type: "spring",
             stiffness: 300,
             damping: 20,
-            delay: 1.2 // Start after numbers finish
+            delay: 1.2
           }}
         >
-          Looks like that page doesn't exist in this website
+          Looks like that page doesn&apos;t exist in this website
         </motion.p>
 
         <motion.div
@@ -87,7 +86,7 @@ export default function NotFound() {
             type: "spring",
             stiffness: 300,
             damping: 20,
-            delay: 1.4 // Start slightly after text
+            delay: 1.4
           }}
           className="w-full sm:w-auto"
         >
