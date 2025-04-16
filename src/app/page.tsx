@@ -2,7 +2,7 @@ import AnimatedContent from '@/components/AnimatedContent'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-white">
+    <main className="min-h-screen bg-white flex items-center justify-center">
       <AnimatedContent />
     </main>
   )

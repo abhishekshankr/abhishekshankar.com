@@ -10,13 +10,17 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Uncut Sans', 'sans-serif'],
+        sans: ['var(--font-uncut-sans)', 'sans-serif'],
+        mono: ['var(--font-uncut-plan8)', 'monospace'],
       },
       typography: {
         DEFAULT: {
           css: {
-            'h1, h2, h3, h4, h5, h6, p, ul, ol, li, code, pre': {
-              fontFamily: 'Uncut Sans',
+            'h1, h2, h3, h4, h5, h6, p, ul, ol, li': {
+              fontFamily: 'var(--font-uncut-sans)',
+            },
+            'code, pre': {
+              fontFamily: 'var(--font-uncut-plan8)',
             },
           },
         },
