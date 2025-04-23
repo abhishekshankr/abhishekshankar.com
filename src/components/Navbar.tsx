@@ -35,6 +35,9 @@ export default function Navbar() {
             <Link href="/contact" className={`${isActive('/contact')} transition-colors`}>
               Contact
             </Link>
+            <Link href="/test-fonts" className={`${isActive('/test-fonts')} transition-colors`}>
+              Test Fonts
+            </Link>
           </div>
         </div>
       </div>
