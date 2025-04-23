@@ -13,6 +13,17 @@ const config: Config = {
         sans: ['var(--font-uncut-sans)', 'sans-serif'],
         mono: ['var(--font-uncut-plan8)', 'monospace'],
       },
+      fontWeight: {
+        thin: '100',
+        extralight: '200',
+        light: '300',
+        normal: '400',
+        medium: '500',
+        semibold: '550',
+        bold: '600',
+        extrabold: '700',
+        black: '800',
+      },
       typography: {
         DEFAULT: {
           css: {
